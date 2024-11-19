@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'seminarapp_1_1',
+    'seminarapp_1_2',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,49 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process} {thread} '
+                      '{message}',
+            'style': '{',
+        },
+        'simple': {'format': '%(levelname)s %(message)s'},
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': './log/django.log',
+            'formatter': 'verbose',
+        },
+        'file2': {
+            'class': 'logging.FileHandler',
+            'filename': './seminarapp_1_2/log/django.log',
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+        },
+        'seminarapp_1_1': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'seminarapp_1_2': {
+            'handlers': ['console', 'file2'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
