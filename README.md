@@ -10,3 +10,5 @@
 
 ## Урок 2. Работа с моделями.
 
+[Ссылка на лекцию в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/lekcii/vtoraja-lekcija.-rabota-s-modeljami/)
+
