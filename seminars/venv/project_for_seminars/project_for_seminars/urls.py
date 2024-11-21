@@ -22,4 +22,5 @@ urlpatterns = [
     path('main_menu_1_1/', include('seminarapp_1_1.urls')),
     path('main_menu_1_2/', include('seminarapp_1_2.urls')),
     path('main_menu_hw_1/', include('hw_seminar_1.urls')),
+    path('main_menu_2_1/', include('seminarapp_2_1.urls')),
 ]
