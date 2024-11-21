@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from .models import Client, Product, Order
 
-# Create your views here.
+
+def client_detail(request, client_id):
+    client = Client.objects.get(pk=client_id)
+    orders = Order.objects.filter(client=client)
+    return render(request, 'hw_seminar_2/client_detail.html', {'client': client, 'orders': orders})
