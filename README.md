@@ -12,3 +12,4 @@
 
 [Ссылка на лекцию в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/lekcii/vtoraja-lekcija.-rabota-s-modeljami/)
 
+[Ссылка на семинар в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/seminary/vtorojj-seminar.-rabota-s-modeljami/)
