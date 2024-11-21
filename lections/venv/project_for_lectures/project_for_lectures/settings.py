@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'lectureapp_1_1',
     'lectureapp_2_1',
+    'lectureapp_3_1',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,9 @@ ROOT_URLCONF = 'project_for_lectures.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -144,14 +147,39 @@ LOGGING = {
             'filename': './log/django.log',
             'formatter': 'verbose',
         },
+        'file1': {
+            'class': 'logging.FileHandler',
+            'filename': './lectureapp_1_1/log/django.log',
+            'formatter': 'verbose',
+        },
+        'file2': {
+            'class': 'logging.FileHandler',
+            'filename': './lectureapp_2_1/log/django.log',
+            'formatter': 'verbose',
+        },
+        'file3': {
+            'class': 'logging.FileHandler',
+            'filename': './lectureapp_3_1/log/django.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
-            'handlers': ['console'],
+            'handlers': ['console', 'file'],
             'level': 'INFO',
         },
         'lectureapp_1_1': {
-            'handlers': ['console', 'file'],
+            'handlers': ['console', 'file1'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'lectureapp_2_1': {
+            'handlers': ['console', 'file2'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'lectureapp_3_1': {
+            'handlers': ['console', 'file3'],
             'level': 'DEBUG',
             'propagate': True,
         },

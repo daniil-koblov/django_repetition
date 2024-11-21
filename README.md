@@ -13,3 +13,9 @@
 [Ссылка на лекцию в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/lekcii/vtoraja-lekcija.-rabota-s-modeljami/)
 
 [Ссылка на семинар в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/seminary/vtorojj-seminar.-rabota-s-modeljami/)
+
+## Урок 3. Работа с представлениями и шаблонами.
+
+[Ссылка на лекцию в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/lekcii/tretja-lekcija.-rabota-s-predstavlenijami-i-shablo/)
+
+[Ссылка на семинар в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/seminary/tretja-seminar.-rabota-s-predstavlenijami-i-shablo/)
