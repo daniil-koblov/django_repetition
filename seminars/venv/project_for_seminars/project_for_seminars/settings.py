@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'seminarapp_1_2',
     'hw_seminar_1',
     'seminarapp_2_1',
+    'hw_seminar_2',
 ]
 
 MIDDLEWARE = [
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'project_for_seminars.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -166,6 +167,11 @@ LOGGING = {
             'filename': './seminarapp_2_1/log/django.log',
             'formatter': 'verbose',
         },
+        'file5': {
+            'class': 'logging.FileHandler',
+            'filename': './hw_seminar_2/log/django.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
@@ -189,6 +195,11 @@ LOGGING = {
         },
         'seminarapp_2_1': {
             'handlers': ['console', 'file4'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'hw_seminar_2': {
+            'handlers': ['console', 'file5'],
             'level': 'DEBUG',
             'propagate': True,
         },
