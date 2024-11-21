@@ -17,5 +17,5 @@ def home(request):
 
 def flip_coin_view(request):
     # result = random.choice(['heads', 'tails'])
-    flip = CoinFlip.get_last_n_flips_stats(3)
+    flip = CoinFlip.get_last_n_flips_stats(5)
     return render(request, 'seminarapp_2_1/coin_flip_template.html', {'flip': flip})

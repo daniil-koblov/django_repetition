@@ -44,3 +44,4 @@ class Article(models.Model):
     views = models.PositiveIntegerField(default=0)
     is_published = models.BooleanField(default=False)
 
+
