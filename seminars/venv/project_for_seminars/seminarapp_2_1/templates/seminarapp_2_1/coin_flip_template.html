@@ -4,11 +4,6 @@
     </head>
     <body>
         <h1>Coin flips history</h1>
-        <ul>
-            {% for flip in flips %}
-                <li>{{ flip.result }} flipped at {{ flip.flip_time }}</li>
-            {% endfor %}
-
-        </ul>
+        <p>Result: {{ flip }}</p>
     </body>
     </html>
