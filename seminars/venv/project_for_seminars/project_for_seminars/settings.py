@@ -174,6 +174,11 @@ LOGGING = {
             'filename': './hw_seminar_2/log/django.log',
             'formatter': 'verbose',
         },
+        'file6': {
+            'class': 'logging.FileHandler',
+            'filename': './seminarapp_3_1/log/django.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
@@ -202,6 +207,11 @@ LOGGING = {
         },
         'hw_seminar_2': {
             'handlers': ['console', 'file5'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'seminarapp_3_1': {
+            'handlers': ['console', 'file6'],
             'level': 'DEBUG',
             'propagate': True,
         },
