@@ -27,4 +27,5 @@ urlpatterns = [
     path('main_menu_2_1/', include('seminarapp_2_1.urls')),
     path('main_menu_hw_2/', include('hw_seminar_2.urls')),
     path('main_menu_3_1/', include('seminarapp_3_1.urls')),
+    path('main_menu_hw_3/', include('hw_seminar_3.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
