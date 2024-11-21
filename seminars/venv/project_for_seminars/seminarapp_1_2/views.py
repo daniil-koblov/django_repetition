@@ -14,21 +14,22 @@ def home(request):
                         f"игр.</h1>")
 
 
-def flip_coin(request):
-    logger.info('Flip_coin page accessed')
-    result = random.choice(['Орёл', 'Решка'])
-    return HttpResponse(f'Результат подбрасывания монеты: <h1>{result}</h1>')
+def flip_coin(request, tryes: int):
+    logger.info("Coin page accessed")
+    flips_list = [random.choice(["Орёл", "Решка"]) for _ in range(tryes)]
+    context = {"title": "Flip coin", "content": flips_list}
+    return render(request, "seminarapp_1_2/games.html", context)
 
 
-def random_roll(request):
+def random_roll(request, tryes: int):
     logger.info('Random_roll page accessed')
-    result = random.randint(1, 6)
-    return HttpResponse(f'После брока кубика выпало значение: <h1>'
-                        f'{result}</h1>')
+    roll_list = [random.randint(1, 6) for _ in range(tryes)]
+    context = {"title": "Random roll", "content": roll_list}
+    return render(request, "seminarapp_1_2/games.html", context)
 
 
-def random_number(request):
+def random_number(request, tryes: int):
     logger.info('Random_number page accessed')
-    result = random.randint(1, 100)
-    return HttpResponse(f'Случайное значение от 1 до 100 равно: <h1>'
-                        f'{result}</h1>')
+    number_list = [random.randint(1, 100) for _ in range(tryes)]
+    context = {"title": "Random number", "content": number_list}
+    return render(request, "seminarapp_1_2/games.html", context)
