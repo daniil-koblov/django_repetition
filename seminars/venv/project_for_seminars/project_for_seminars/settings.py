@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'seminarapp_3_1',
     'hw_seminar_3',
     'seminarapp_4_1',
+    'hw_seminar_4',
 ]
 
 MIDDLEWARE = [
@@ -194,6 +195,11 @@ LOGGING = {
             'filename': './seminarapp_4_1/log/django.log',
             'formatter': 'verbose',
         },
+        'file9': {
+            'class': 'logging.FileHandler',
+            'filename': './hw_seminar_4/log/django.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
@@ -237,6 +243,11 @@ LOGGING = {
         },
         'seminarapp_4_1': {
             'handlers': ['console', 'file8'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'hw_seminar_4': {
+            'handlers': ['console', 'file9'],
             'level': 'DEBUG',
             'propagate': True,
         },
