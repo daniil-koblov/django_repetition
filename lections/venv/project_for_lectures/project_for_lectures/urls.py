@@ -23,4 +23,5 @@ urlpatterns = [
     path('main_menu_1_1/', include('lectureapp_1_1.urls')),
     path('main_menu_3_1/', include('lectureapp_3_1.urls')),
     path('', index, name='index'),
+    path('main_menu_4_1/', include('lectureapp_4_1.urls')),
 ]
