@@ -1,10 +1,10 @@
-from .views import index, games, add_author, add_article, articles
+from . import views
 from django.urls import path
 
 urlpatterns = [
-    path('', index, name='index'),
-    path('games/', games, name='games'),
-    path('author/', add_author, name='add_author'),
-    path('add_article/', add_article, name='add_article'),
-    path('articles/', articles, name='articles'),
+    path('', views.index, name='index'),
+    path('games/', views.games, name='games'),
+    path('author/', views.add_author, name='add_author'),
+    path('add_article/', views.add_article, name='add_article'),
+    path('articles/', views.articles, name='articles'),
 ]

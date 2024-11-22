@@ -52,7 +52,6 @@ def games(request):
                 return random_number(request, attempts)
     else:
         form = GameForm()
-
     return render(request, 'seminarapp_4_1/games.html', {'form': form})
 
 
