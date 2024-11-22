@@ -12,8 +12,12 @@ class Author(models.Model):
     def full_name(self):
         return f"{self.name} {self.last_name}"
 
-    def __str__(self) -> str:
+    def __str__(self):
         return f"{self.name} {self.last_name}"
+
+    class Meta:
+        verbose_name = "Авторы"
+        verbose_name_plural = "Авторы"
 
 
 class Article(models.Model):
