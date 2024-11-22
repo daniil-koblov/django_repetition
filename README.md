@@ -25,3 +25,9 @@
 [Ссылка на лекцию в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/lekcii/chetvertaja-lekcija.-rabota-s-formami/)
 
 [Ссылка на семинар в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/seminary/chetvertyjj-seminar.-rabota-s-formami/)
+
+## Урок 5. Работа с административной панелью.
+
+[Ссылка на лекцию в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/lekcii/pjataja-lekcija.-rabota-s-administrativnojj-panelj/)
+
+[Ссылка на семинар в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/seminary/pjatyjj-seminar.-rabota-s-administrativnojj-panelj/)
