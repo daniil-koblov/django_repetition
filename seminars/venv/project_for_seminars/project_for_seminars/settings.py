@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'hw_seminar_2',
     'seminarapp_3_1',
     'hw_seminar_3',
+    'seminarapp_4_1',
 ]
 
 MIDDLEWARE = [
@@ -128,6 +129,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
@@ -185,6 +189,11 @@ LOGGING = {
             'filename': './hw_seminar_3/log/django.log',
             'formatter': 'verbose',
         },
+        'file8': {
+            'class': 'logging.FileHandler',
+            'filename': './seminarapp_4_1/log/django.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
@@ -223,6 +232,11 @@ LOGGING = {
         },
         'hw_seminar_3': {
             'handlers': ['console', 'file7'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'seminarapp_4_1': {
+            'handlers': ['console', 'file8'],
             'level': 'DEBUG',
             'propagate': True,
         },

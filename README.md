@@ -19,3 +19,9 @@
 [Ссылка на лекцию в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/lekcii/tretja-lekcija.-rabota-s-predstavlenijami-i-shablo/)
 
 [Ссылка на семинар в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/seminary/tretja-seminar.-rabota-s-predstavlenijami-i-shablo/)
+
+## Урок 4. Работа с формами.
+
+[Ссылка на лекцию в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/lekcii/chetvertaja-lekcija.-rabota-s-formami/)
+
+[Ссылка на семинар в базе](https://wiki.yandex.ru/izuchenie-programmirovanija/geekbrains/frejjmvork-django/seminary/chetvertyjj-seminar.-rabota-s-formami/)
