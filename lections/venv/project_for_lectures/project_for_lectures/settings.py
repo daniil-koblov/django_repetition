@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'lectureapp_1_1',
     'lectureapp_2_1',
     'lectureapp_3_1',
+    'lectureapp_4_1',
 ]
 
 MIDDLEWARE = [
@@ -162,6 +163,11 @@ LOGGING = {
             'filename': './lectureapp_3_1/log/django.log',
             'formatter': 'verbose',
         },
+        'file4': {
+            'class': 'logging.FileHandler',
+            'filename': './lectureapp_4_1/log/django.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
@@ -180,6 +186,11 @@ LOGGING = {
         },
         'lectureapp_3_1': {
             'handlers': ['console', 'file3'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'lectureapp_4_1': {
+            'handlers': ['console', 'file4'],
             'level': 'DEBUG',
             'propagate': True,
         },
