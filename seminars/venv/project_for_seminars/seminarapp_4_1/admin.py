@@ -47,6 +47,6 @@ class AuthorAdmin(admin.ModelAdmin):
     ]
 
 
-admin.site.register(Author, AuthorAdmin)
 admin.site.register(Article)
 admin.site.register(Comment)
+admin.site.register(Author, AuthorAdmin)
